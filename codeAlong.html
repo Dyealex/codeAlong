@@ -1,0 +1,68 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>codeAlong</title>
+  <meta name="description" content="homework">
+  <meta name="author" content="me">
+
+ <!-- <link rel="stylesheet" href="css/styles.css?v=1.0"> -->
+ 
+</head>
+<p><input type="text" id="yourGuess"><button id= "guess">Guess?</button></p>
+<body>
+    <script src="text/javascript">  
+
+var counter = 3;
+// counter = 1;
+console.log(counter);
+
+while (counter<=100) {
+    console.log(counter);
+counter += 2;
+} 
+if (counter%3>0) {
+    console.log("fizz");
+}
+if (counter%4>0){
+    console.log("buzz");
+}
+// it will console.log buzz and fizz but at the end at 99 instead of on the lines. Better than nothing....
+var a = 3;
+var b = 5;
+var c = b*a;
+
+    console.log(c)
+
+    document.getElementById("guess").onclick=function(){   
+var randomNumber=Math.random();
+randomNumber=randomNumber*10;
+randomNumber=Math.ceil(randomNumber);
+
+if  ("yourGuess" == randomNumber) {
+    alert ("You got it right!")
+} else {
+    alert ("Try again!")
+}
+}
+// alert ("Hi there!")
+var groceryList = new Array();
+myArray[0]="Peanut Butter";
+myArray[1]="Oreos";
+myArray[2]="Yogurt";
+myArray[3]="Catfood";
+myArray[4]="dog treats";
+myArray[5]="treats for the cats";
+myArray[6]="milk";
+myArray[7]="bacon"
+myArray[8]="eggs";
+myArray[9]="bread";
+
+
+
+</script>
+
+
+    </body>
